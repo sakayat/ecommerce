@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+<header class="sticky z-10 top-0 w-full bg-gray-800">
+    <div class="container mx-auto">
+        <nav class="navbar flex items-center justify-between text-white font-bold py-8">
+            <a href="/" class="">Ecommerce</a>
+            <div class="cart-options relative cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+                <span class="cart-count bg-gray-800 text-white text-sm font-bold absolute top-0 right-0">0</span>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container mx-auto">
+    <div class="products-info text-sm grid grid-cols-4 gap-8 pt-6"></div>
+</div>
+<div class="shopping-cart text-sm fixed z-20 inset-0 bg-white shadow-xl ml-auto hidden overflow-y-scroll w-96">
+    <div>
+        <div class="flex items-center justify-between font-medium text-gray-800 py-6 px-4">
+            <h2>Shopping Cart</h2>
+            <button class="close-cart -m-2 p-2">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="cart-page"></div>
+    </div>
+</div>
+    <div class="view hidden fixed top-0 right-0 left-0 z-50 md:inset-0 flex justify-center items-center">
+        <div class="quick-view-info relative p-6 w-full max-w-2xl h-full md:h-auto"></div>
+    </div>
+</body>
+</html>
